@@ -1,0 +1,59 @@
+.type {
+    height: 20%;
+    display: flex;
+    cursor: pointer;
+}
+
+.login,
+.register {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: #3abdc1;
+}
+
+
+.formContent {
+    height: 80%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    height: 70%;
+    justify-content: space-between;
+}
+
+.input input {
+    height: 60%;
+    padding-left: 10px;
+    outline: none;
+    margin-bottom: 5%;
+    background-color: #6fdcdf;
+    color: #fff;
+}
+
+.input input::placeholder {
+    color: #fff;
+}
+
+.registerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    background-color: #fff;
+    margin: 0 10%;
+    height: 20%;
+    cursor: pointer;
+}
+
+.registerBtn:hover {
+    background-color: #3abdc1;
+    color: #fff;
+}

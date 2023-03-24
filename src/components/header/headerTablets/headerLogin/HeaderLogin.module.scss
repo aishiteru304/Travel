@@ -1,0 +1,87 @@
+.type {
+    height: 20%;
+    display: flex;
+    cursor: pointer;
+}
+
+.login,
+.register {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register {
+    background-color: #3abdc1;
+}
+
+.social {
+    height: 20%;
+    display: flex;
+    cursor: pointer;
+}
+
+.facebook,
+.google {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.google {
+    background-color: #dd4b39;
+}
+
+.facebook:hover,
+.google:hover {
+    opacity: 0.9;
+}
+
+.formContent {
+    height: 60%;
+    margin-bottom: 10%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+    height: 70%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.input input {
+    height: 50%;
+    padding-left: 10px;
+    outline: none;
+    margin-bottom: 5%;
+    background-color: #6fdcdf;
+    color: #fff;
+}
+
+.input input::placeholder {
+    color: #fff;
+}
+
+.signIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    background-color: #fff;
+    margin: 0 10%;
+    height: 20%;
+    cursor: pointer;
+}
+
+.signIn:hover {
+    background-color: #3abdc1;
+    color: #fff;
+}

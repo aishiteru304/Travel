@@ -1,0 +1,41 @@
+.elementInner {
+    position: fixed;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+    left: 0;
+    right: 0;
+    top: -320px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.subElement {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.subElement a {
+    font-size: 1rem;
+}
+
+.subElement a:first-child {
+    color: var(--primary-color);
+}
+
+.subElement a+a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 8px;
+}
+
+.headerElement:hover .elementInner {
+    transform: translateY(400px);
+    opacity: 1;
+    pointer-events: auto;
+}

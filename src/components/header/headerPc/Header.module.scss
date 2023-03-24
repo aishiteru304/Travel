@@ -1,0 +1,153 @@
+.wrap {
+    position: fixed;
+    height: 80px;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 10;
+}
+
+// Phần header logo
+.headerLogo {
+    height: 100%;
+    width: var(--headerLogo-width);
+    display: flex;
+    align-items: center;
+}
+
+.headerLogo img {
+    height: 48px;
+    width: 100%;
+}
+
+// Phần menu header
+.headerCatelogy {
+    width: calc(100% - var(--headerIcon-width) - var(--headerLogo-width));
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1200px) {
+    .headerCatelogy {
+        padding: 0 5%;
+    }
+}
+
+/* Phần link hover  */
+.primaryLink {
+    color: #000;
+    position: relative;
+    display: block;
+    width: max-content;
+}
+
+.primaryLink:hover {
+    color: var(--primary-color);
+}
+
+.primaryLink::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    background-color: var(--primary-color);
+    height: 3px;
+    transition: width 0.2s ease-out;
+}
+
+.primaryLink.menuLink::after {
+    bottom: 20px;
+}
+
+.primaryLink:hover::after {
+    width: 100%;
+}
+
+.headerItem {
+    height: 100%;
+    line-height: 80px;
+    position: relative;
+}
+
+.headerItem a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.item {
+    position: absolute;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+    padding: 0 10px 10px 10px;
+    left: -10px;
+    top: -0px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+    pointer-events: none;
+    // z-index: 10;
+}
+
+
+.headerItem:hover .item {
+    transform: translateY(80px);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.item a {
+    height: 40px;
+    line-height: 40px;
+}
+
+// Phần header icon
+.headerIcon {
+    width: var(--headerIcon-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 80px;
+    font-size: 25px;
+}
+
+.icon {
+    color: #000;
+}
+
+.iconLink:hover .icon {
+    color: var(--primary-color);
+}
+
+.iconLink {
+    position: relative;
+    height: 100%;
+}
+
+.iconLink:first-child {
+    padding-left: 15px;
+}
+
+.cartItem {
+    position: absolute;
+    width: 250px;
+    min-height: 100px;
+    top: 0px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    color: #000;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.iconLink:hover .cartItem {
+    pointer-events: auto;
+    opacity: 1;
+    transform: translateY(80px);
+}
