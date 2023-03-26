@@ -5,9 +5,10 @@
     top: 0;
     left: 0;
     right: 0;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     z-index: 10;
+    background-color: #fff;
 }
 
 // Phần header logo
@@ -88,7 +89,7 @@
     opacity: 0;
     transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
     pointer-events: none;
-    // z-index: 10;
+    background-color: #fff;
 }
 
 
@@ -124,6 +125,7 @@
 .iconLink {
     position: relative;
     height: 100%;
+    cursor: pointer;
 }
 
 .iconLink:first-child {
@@ -144,10 +146,117 @@
     box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
     opacity: 0;
     transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+    background-color: #fff;
 }
 
 .iconLink:hover .cartItem {
     pointer-events: auto;
     opacity: 1;
     transform: translateY(80px);
+}
+
+// Phần icon search
+.headerSearch {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(63, 208, 212, 0.8);
+    z-index: 10;
+}
+
+.searchContent {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    top: 40%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchContent input {
+    padding-left: 10px;
+    width: 80%;
+    outline: none;
+}
+
+.searchContent .find {
+    background-color: var(--primary-color);
+    width: 20%;
+    text-align: center;
+    color: #fff;
+}
+
+.find:hover {
+    background-color: rgb(67 185 188);
+    cursor: pointer;
+}
+
+// Phần icon Menu
+.headerMenu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 20%);
+}
+
+.exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconExit:hover {
+    color: var(--primary-color);
+}
+
+.menuLogo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 20px;
+    overflow: hidden;
+}
+
+.titleSocial {
+    text-align: center;
+    font-weight: 500;
+}
+
+.socialContent {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 30px;
+}
+
+.socialItem {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
