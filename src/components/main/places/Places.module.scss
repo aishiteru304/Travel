@@ -1,0 +1,59 @@
+.wrap {
+    min-height: 450px;
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+.titleExtra {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Satisfy', cursive;
+    color: var(--primary-color);
+    line-height: 6rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.titleMain {
+    font-size: 4.4rem;
+    font-weight: 600;
+    color: #000;
+    text-transform: capitalize;
+    line-height: 8rem;
+    text-align: center;
+}
+
+.des {
+    margin: 0 10px;
+    text-align: center;
+}
+
+
+.wrapImg {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 36px;
+}
+
+.wrapImg:hover {
+    transform: translateY(-10px);
+}
+
+.placeName {
+    text-transform: capitalize;
+    text-align: center;
+    margin: 12px 0;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+@media(max-width:600px) {
+    .titleExtra {
+        font-size: 2rem;
+    }
+
+    .titleMain {
+        font-size: 3rem;
+    }
+}

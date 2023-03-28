@@ -16,13 +16,6 @@
     z-index: 5;
 }
 
-.item {
-    // height: 100%;
-    // width: 50%;
-    // flex-shrink: 0;
-    // background-color: #fff;
-}
-
 .itemContent {
     background-color: #fff;
     width: 100%;
@@ -86,5 +79,16 @@
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+    text-align: center;
+}
+
+.titleMain {
+    position: absolute;
+    height: 80px;
+    top: 90px;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 600;
+    width: 100%;
     text-align: center;
 }

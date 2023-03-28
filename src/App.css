@@ -25,3 +25,11 @@ ul {
   --headerIcon-width: 120px;
   --primary-color: #3fd0d4;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.w-30 {
+  width: 30%;
+}

@@ -1,0 +1,45 @@
+.wrap {
+    min-height: 200px;
+    margin-top: 60px;
+    background-color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 150px;
+    position: relative;
+}
+
+.wrapContent {
+    padding: 0 10%;
+    padding-top: 60px;
+    min-height: 200px;
+    color: #fff;
+}
+
+.wrapContent img {
+    height: 84px;
+}
+
+.wrapInput {
+    background-color: rgba(89, 89, 89, 1);
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+input {
+    outline: none;
+    background-color: rgba(89, 89, 89, 1);
+    color: #fff;
+    line-height: 32px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.copyright {
+    color: #fff;
+    position: absolute;
+    bottom: 30px;
+    left: 45%;
+}

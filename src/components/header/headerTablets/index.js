@@ -35,7 +35,7 @@ export default function HeaderTablets() {
                 <div className={`${styles.catelogy} ${isShowCatelogy ? styles.show : ''}`}>
                     {
                         subMenu.map(item => (
-                            <Link key={item} to='/' className={styles.subMenu}>
+                            <Link key={item} to='/Travel' className={styles.subMenu}>
                                 <p>{item}</p>
                                 <MdOutlineArrowForwardIos />
                             </Link>
@@ -44,7 +44,7 @@ export default function HeaderTablets() {
                 </div>
             </div>
             <div className={styles.tabletsLogo}>
-                <Link to='/'> <img alt='' src='https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-mobile-img.png'></img></Link>
+                <Link to='/Travel'> <img alt='' src='https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo-mobile-img.png'></img></Link>
             </div>
             <div className={styles.tabletsAvatar}>
                 <RxAvatar className={styles.iconAvatar} onClick={handleCover} />

@@ -129,6 +129,7 @@ export default function TopReview() {
                 <div className={styles.right} onClick={handleRight}><AiOutlineRight /></div>
                 <div className={styles.end} onClick={handleEnd}>{numSlide}</div>
             </div >
+            <div className={styles.titleMain}>Top Reviews</div>
         </div>
     );
 }

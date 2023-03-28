@@ -47,6 +47,7 @@ const list = [
 
 
 export default function Slider() {
+
     const itemsRef = useRef();
     const itemRef = useRef();
     const currentItemRef = useRef(0);

@@ -35,7 +35,7 @@ export default function HeaderPc() {
     return (
         <div className={styles.wrap}>
             <div className={styles.headerLogo}>
-                <Link to='/'><img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo.png" alt=''></img></Link>
+                <Link to='/Travel'><img src="https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/logo.png" alt=''></img></Link>
             </div>
             <div className={styles.headerCatelogy}>
                 <HeaderHome />
